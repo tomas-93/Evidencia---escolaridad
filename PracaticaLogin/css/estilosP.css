@@ -1,0 +1,66 @@
+h4
+{
+	font-family: arial;
+	font-size: 15px;
+	float:left;
+	margin-left: 10px;
+}
+#divPrincipalP
+{
+	background-color: #DEDEDE;
+	border-style: solid;
+	border-color: #434343;
+	border-radius: 30px;
+	height: 350px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 10px;
+	
+}
+#divHead
+{
+	background-color: #DEDEDE;
+	border-style: solid;
+	border-color: #434343;
+	border-radius: 30px;
+	height: 50px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 10px;
+}
+#fieldset2
+{
+	background-color: #EBEBEB;
+	border-color: #75B3CE;
+	border-radius: 20px;
+	float:none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.etiqueta2
+{
+	float:left;
+	font-family: arial;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 200px;
+}
+.h
+{
+	float: none;
+	font-family: arial;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	text-align: center;
+}
+.input
+{
+	float: left;
+	font-family: arial;
+	font-size: 15px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 200px;
+}

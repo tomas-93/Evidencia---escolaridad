@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../public/css/administracion.css">
+    <script type="text/javascript" src ="../public/source/query.js"></script>
+    <script type="text/javascript" src ="../public/source/ventana.js"></script>
+    <script type="text/javascript" src ="../controllers/administracion.js"></script>
+    <script type="text/javascript" src ="../public/scripts/administracion.js"></script>
+    <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id = "divAdministracion">
+<!-- Menu ---------------------------------------------------------------------->
+        <div id ="divMenu">
+            <nav id = "menuAdminisitracion">
+                <div class="btn-group">
+                    <button id = "buscar" type="button" class="btn btn-info dropdown-toggle botonav"
+                            data-toggle="dropdown">
+                        Buscar...<span class="caret"></span>
+                    </button>
+                    <ul  class="dropdown-menu" role="menu">
+                        <li id = "li1"><a>Alumnos...</a></li>
+                        <li  class="divider"></li>
+                        <li id="li2"><a>Maestros...</a></li>
+                        <li class="divider"></li>
+                        <li id="li3"><a>Empleado...</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button id = "registrar" type="button" class="btn btn-info dropdown-toggle botonav"
+                            data-toggle="dropdown">
+                        Registrar A...<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="li4"><a>Alumnos...</a></li>
+                        <li class="divider"></li>
+                        <li id="li5"><a>Maestros...</a></li>
+                        <li class="divider"></li>
+                        <li id="li6"><a>Empleado...</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle botonav"
+                            data-toggle="dropdown">
+                        Reporte de...<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li id="li7"><a>Alumnos...</a></li>
+                        <li class="divider"></li>
+                        <li id="li8"><a>Maestros...</a></li>
+                        <li class="divider"></li>
+                        <li id="li9"><a>Empleado...</a></li>
+                        <li class="divider"></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<!-- Alumno -------------------------------------------------------------------->
+        <div id = "alumno" class="panel panel-info paneles">
+            <div class="panel-heading">
+                <h2 class="panel-title">Informacion de los Alumnos</h2>
+            </div>
+            <div class="panel-body">
+                <form id="formAlumno" class="form-horizontal" role="form">
+                    <div class="col-lg-6 divPanel">
+                        <div id ="divChek1" class="input-group grupoElementos">
+                            <span id = "addChek1" class="spanFondo input-group-addon">
+                                <input type="checkbox" id="asistenciaAlumno" name = "asistenciaAlumno" title ="Asistencia del Alumno">
+                            </span>
+                            <input type="text" id="numeroDeControl" class=" form-control input-lg"
+                                       name="numero_control" placeholder="Ingrese el numero de control" title="Numero de control"/>
+                        </div>
+                        <input type="text" id="nombreAlumno" class="inputAdiministrador form-control input-lg" name="nombre_estudiante"
+                               placeholder="Nombre del alumno" title="Nombre del Alumno"/>
+                        <label>Carrera</label>
+                        <select id = "selectCarrera" name="carrera" class="form-control" title="Carrera">
+                            <option value = "">--------------------</option>
+                            <option value = "Ing. Sistemas">Ing. Sistemas Computacionales</option>
+                            <option value = "Ing. Informatia">Ing. Informatia</option>
+                            <option value = "Ing. Bioquimica">Ing. Bioquimica</option>
+                            <option value = "Ing. Mecanica">Ing. Mecanica</option>
+                            <option value = "Ing. Electrica">Ing. Electrica</option>
+                            <option value = "Ing. Quimica">Ing. Quimica</option>
+                            <option value = "Ing. Mecatronica">Ing. Mecatronica</option>
+                            <option value = "Ing. Administracion">Ing. Administracion</option>
+                            <option value = "Ing. Gestion Empresarial">Ing. Gestion Empresarial</option>
+                            <option value = "Ing. Petrolera">Ing. Petrolera</option>
+                            <option value = "Ing. Industrial">Ing. Industrial</option>
+                            <option value = "Ing. Electronica">Ing. Electronica</option>
+                        </select>
+                        <label>Nivel academico</label>
+                        <select id = "selectNivel" name="nivel" class="form-control" title="Nivel">
+                            <option value = "">--------------------</option>
+                            <option value = "1: A">1: A</option>
+                            <option value = "1: B">1: B</option>
+                            <option value = "2: A">2: A</option>
+                            <option value = "2: B">2: B</option>
+                            <option value = "3: A">3: A</option>
+                            <option value = "3: B">3: B</option>
+                            <option value = "4: A">4: A</option>
+                            <option value = "4: B">4: B</option>
+                            <option value = "5: A">5: A</option>
+                            <option value = "5: B">5: B</option>
+                            <option value = "6: A">6: A</option>
+                            <option value = "6: B">6: B</option>
+                            <option value = "7: A">7: A</option>
+                            <option value = "7: B">7: B</option>
+                            <option value = "8: A">8: A</option>
+                            <option value = "8: B">8: B</option>
+                            <option value = "9: A">9: A</option>
+                            <option value = "9: B">9: B</option>
+                            <option value = "Ripite xD">Repite xD</option>
+                        </select>
+                    </div>
+                    <div id = "objeto1" class ="objetoOculto">
+                    </div>
+                    <div id = "botton1"></div>
+                </form>
+            </div>
+        </div>
+<!-- Maestro -------------------------------------------------------------------->
+        <div id = "maestro"  class="panel panel-info paneles">
+            <div class="panel-heading">
+                <h2 class="panel-title">Informacion de los Maestros</h2>
+            </div>
+            <div class="panel-body">
+                <form id="formMestro" class="form-horizontal" role="form">
+                    <div class="col-lg-6 divPanel">
+                        <div id = "divchek2" class="input-group grupoElementos">
+                            <span id = "addChek2" class="spanFondo input-group-addon">
+                                <input type="checkbox" id ="checkAsistenciMaestro" name = "asistencia" title ="Asistencia">
+                            </span>
+                            <input type="text" id="codigoMestro" class=" form-control input-lg"
+                                   name="codigo_Maestro" placeholder="Codigo del maestro" title="Codigo del Maestro"/>
+                        </div>
+                        <input type="text" id="nombreMaestro" class="inputAdiministrador form-control input-lg" name="nombre_maestro"
+                               placeholder="Nombre del Maestro" title="Nombre del Maestro"/>
+                        <label>Divicion</label>
+                        <select id = "selectDivicion" name="divicion" class="form-control" title="Divicion">
+                            <option value = "">--------------------</option>
+                            <option value = "Ing. Sistemas">Ing. Sistemas Computacionales</option>
+                            <option value = "Ing. Informatia">Ing. Informatia</option>
+                            <option value = "Ing. Bioquimica">Ing. Bioquimica</option>
+                            <option value = "Ing. Mecanica">Ing. Mecanica</option>
+                            <option value = "Ing. Electrica">Ing. Electrica</option>
+                            <option value = "Ing. Quimica">Ing. Quimica</option>
+                            <option value = "Ing. Mecatronica">Ing. Mecatronica</option>
+                            <option value = "Ing. Administracion">Ing. Administracion</option>
+                            <option value = "Ing. Gestion Empresarial">Ing. Gestion Empresarial</option>
+                            <option value = "Ing. Petrolera">Ing. Petrolera</option>
+                            <option value = "Ing. Industrial">Ing. Industrial</option>
+                            <option value = "Ing. Electronica">Ing. Electronica</option>
+                        </select>
+                    </div>
+                    <div id = "botton2"></div>
+                </form>
+            </div>
+        </div>
+<!-- adiministracion--------------------------------------------------------- --->
+        <div id = "administrativo" class="panel panel-info paneles">
+            <div class="panel-heading">
+                <h2 class="panel-title">Administracion</h2>
+            </div>
+            <div class="panel-body">
+                <form id="formAdministrativo" class="form-horizontal" role="form">
+                    <div  id = "divPnelx" class="col-lg-6 divPanel">
+                        <div id = "divchek3" class="input-group grupoElementos">
+                            <span id ="addChek3" class="spanFondo input-group-addon">
+                                <input type="checkbox" id="checkAsistenciaAdmini" name = "asistencia" title ="Asistencia">
+                            </span>
+                            <input type="text" id="codigoAdministrativo" class=" form-control input-lg"
+                                   name="codigo_administrativo" placeholder="Codigo del empleado" title="Codigo del Empleado"/>
+                        </div>
+                        <input type="text" id="nombreAdministrativo" class="inputAdiministrador form-control input-lg" name="nombre_administrativo"
+                               placeholder="Nombre del empleado" title="Nombre del Empleado"/>
+                        <label>Puesto</label>
+                        <select id = "selectPuesto" name="puesto" class="form-control" title="Puesto">
+                            <option value = "">--------------------</option>
+                            <option value = "Director">Director</option>
+                            <option value = "Subdirector">Subdirector</option>
+                            <option value = "Jefe de Carrera">Jefe de Carrera</option>
+                        </select>
+                        <div id="botton3"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <span id = "server"><p id="serverp"></p></span>
+    <div id = "pdf"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practica Login</title>
+		<meta charset ="utf-8">
+		<link rel="stylesheet" href = "css\estilosIndex.css">
+		<link rel="stylesheet" href = "css\estilosP.css">
+		<script type="text/javascript" src="Controlador\jquery.js"></script>
+		<script type="text/javascript" src="Controlador\ajaxEncuesta.js"></script>
+	</head>
+	<body>
+		<div id ="divHead">
+			<header>
+			<h4></h4>
+			<a id ="a" href = "index.html">Salir</a>
+			</header>
+		</div>
+		<div id ="divPrincipalP">
+			<h2 class = "h">Responde las siguientes preguntas</h2>
+			<h3 class = "h">Tu nombre, no se registrara en el reporte</h3>
+			<form>
+				<fieldset  id ="fieldset2">
+					<legend>Encuesta</legend>
+					<div>
+						<label for ="edad" class ="etiqueta2">Edad: </label>
+						<input type="text" class ="input"name ="edad" title="Ingresa tu edad" placeholder ="Ejemplo: 16 años"/>
+					</div>
+					<div>
+						<label for = "nivel" class = "etiqueta2">Nivel de Estudios:</label>
+						<input type ="text" class ="input" name ="nivel" title ="Nivel escolar" placeholder ="Ejemplo: Primaria"/>
+					</div>
+					<div>
+						<label for = "escuela" class = "etiqueta2">Nombre de la institucion:</label>
+						<input type ="text" class ="input" name ="escuela" title ="Nombre de tu escuela" placeholder ="Ejemplo: Itesco, Cetis"/>
+					</div>
+					<div>
+						<label for = "telefonos" class = "etiqueta2">Compañia telefonica:</label>
+						<input type ="text" class ="input" name ="telefonos" title ="Nombre de tu compañia" placeholder ="Ejemplo: Telcel, Movistar"/>
+					</div>
+					<div>
+						<label for = "localidad" class = "etiqueta2">Localidad:</label>
+						<input type ="text" class ="input" name ="localidad" title ="Donde vives" placeholder ="Ejemplo: Mina, Orizaba"/>
+					</div>
+					<div>
+						<label for = "llamadas" class = "etiqueta2">Llamadas al dia:</label>
+						<input type ="text" class ="input" name ="llamadas" title ="Numero de llamadas al dia" placeholder ="Ejemplo 3 o 4 al dia"/>
+					</div>
+					<div>
+						<input type ="submit" class ="input" name ="boton" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div><span></span></div>
+	</body>
+</html>

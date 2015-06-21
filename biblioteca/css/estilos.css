@@ -1,0 +1,117 @@
+body
+{
+	background-color: #DCDCDC;
+}
+nav
+{
+	background-color: #F6F6F6;
+	border-style: solid;
+	border-color: #58CAEC;
+	border-width: 2px;
+	border-radius: 20px;
+	float: left;
+	height: 420px;
+	margin-left: 25px;
+	margin-top: 20px;
+	padding: 10px;
+	width: 170px;
+}
+h3
+{
+	font-family: arial;
+	font-size: 20px;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	margin-left: 5%;
+	margin-right: 2%;
+}
+figure
+{
+	margin: 0px;
+}
+figcaption
+{
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
+}
+span
+{
+	float: left;
+	width: 600px;
+	height: 250px;
+}
+#barraDeEncabezado
+{
+	background-color: #4DAFF0;
+	height: 55px;
+}
+#divPrincipal
+{
+	background-color: #EFEFEF;
+	height: 600px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 16%;/*16%*/
+	margin-right: 16%;/*16%*/
+
+}
+#divContenido
+{
+	float: right;
+	height: 500px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-right: 5%;
+	margin-left: 3%;
+	width: 600px;
+}
+#img1
+{
+	float: left;
+	height: 45px;
+	margin-top: 3px;
+	margin-left: 40px;
+	width: 45px;
+}
+#inicioDeSeccion
+{
+	float: left;
+	height: 45px;
+	margin-bottom: 3px;
+	margin-top: 4px;
+	margin-left: 15px;
+	margin-right: 30px;
+	width: 45px;
+}
+.divImg
+{
+	background-color: #F6F6F6;
+	border-style: solid;
+	border-color: #58CAEC;
+	border-width: 2px;
+	margin: 5%;
+}
+.fa
+{
+	display: none;
+}
+.imgMenu
+{
+	height: 74px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 74px;
+}
+
+.divImg:hover
+{
+	border-color: #39939A;
+}
+.divImg:active
+{
+	border-color: #000000;
+}
