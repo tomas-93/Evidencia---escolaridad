@@ -1,0 +1,116 @@
+body
+{
+    background-color: #F5F5F5;
+}
+a
+{
+    width: 332px;
+}
+#alumno
+{
+    margin-left: 34px;
+}
+#divAdministracion
+{
+    background-color: #ffffff;
+    height: 500px;
+    margin-top: 5%;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+}
+
+#divMenu
+{
+    border-color: #51CCFF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 18px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 18px 3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 18px 3px rgba(0,0,0,1);
+}
+#menuAdminisitracion
+{
+    padding: 5px;
+
+}
+#pdf
+{
+    display: none;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #51CCFF;
+    border-width: 3px;
+    height: 600px;
+    margin-top: 20px;
+    font-family: arial;
+    font-size: 18px;
+    padding: 15px;
+    width: 700px;
+}
+#server
+{
+    display: none;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #51CCFF;
+    border-width: 3px;
+    height: auto;
+    font-family: arial;
+    font-size: 18px;
+    padding: 15px;
+    width: 500px;
+}
+#serverp
+{
+    margin: 0px;
+}
+
+.botonav
+{
+    width: 332px;
+}
+
+.divPanel
+{
+    padding: 0px;
+    width: 300px;
+}
+.grupoElementos
+{
+    margin-bottom: 10px;
+}
+.paneles
+{
+    float: left;
+    height: 345px;
+    margin: 25px;
+    margin-left: 34px;
+    width: 330px;
+    -webkit-box-shadow: 0px 0px 24px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 24px 3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 24px 3px rgba(0,0,0,1);
+}
+
+.inputAdiministrador
+{
+    margin-bottom: 10px;
+}
+
+.spanFondo
+{
+    background-color: #ffffff;
+}
+.button
+{
+    margin: 10px;
+}

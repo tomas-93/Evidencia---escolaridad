@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Biblioteca</title>
+		<meta charset ="utf-8"/>
+		<link rel ="stylesheet" href = "css\estilos.css"/>
+		<link rel ="stylesheet" href = "css\ConsultaLibros.css"/>
+		<link rel ="stylesheet" href = "css\AltaDePedidos.css"/>
+		<link rel ="stylesheet" href = "css\AltaDeLibro.css"/>
+		<script type="text/javascript" src="Controlador\controlador.js"></script>
+		<script type="text/javascript" src="Controlador\ajax.js"></script>
+	</head>
+	<body>
+		<div id ="divPrincipal">
+			<header>
+				<div id ="barraDeEncabezado">
+					<figure>
+						<img src ="img\img1.gif" id= "img1">
+					</figure>
+					<h3>Biblioteca</h3>
+					<h3>Instituto Tecnologico Superior De Coatzacoalcos</h3>
+					<figure>
+						<img src ="img\img1.gif" id= "img1">
+					</figure>
+				</div>
+			</header>
+			<nav>
+				<figure>
+					<div class ="divImg" onclick="consultaDeLibros();">
+						<img  id ="botonimg"src ="img\img2.png"/ class ="imgMenu" >
+						<figcaption>Consulta</figcaption>
+					</div>
+					<div class ="divImg" onclick="altaDeLibros();">
+						<img src ="img\img3.png" class ="imgMenu" >
+						<figcaption>Alta de Libro</figcaption>
+					</div>
+					<div class ="divImg" onclick="pedidoDeLibros();">
+						<img src ="img\img4.png" class ="imgMenu" >
+						<figcaption>Prestamo</figcaption>
+					</div>
+				</figure>
+			</nav>
+			<div id ="divContenido"></div>
+			<span id="span"></span>
+		</div>
+	</body>
+</html>

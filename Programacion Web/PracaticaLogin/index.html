@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practica Login</title>
+		<meta charset ="utf-8">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href = "css\estilosIndex.css">
+		<script type="text/javascript" src="Controlador\jquery.js"></script>
+		<script type="text/javascript" src="Controlador\ajax.js"></script>
+	</head>
+	<body>
+		<div id ="divPrincipal">
+			<header>
+				<a href ="login.html">Iniciar Sesion</a>
+				<h3>Registro</h3>
+			</header>
+			<form>
+				<fieldset  id ="fieldset">
+					<legend>Control Escolar</legend>
+					<div>
+						<label for ="usuario" class ="etiqueta">Nombre De Usuario</label>
+						<input type="text" class ="input"name ="usuario" title="Ingrese el nombre de usuario" placeholder ="Nombre"/>
+					</div>
+					<div>
+						<label for = "password" class = "etiqueta">Password</label>
+						<input type ="password" class ="input" name ="password" title ="Ingrese su contraseña" placeholder ="Contraseña"/>
+					</div>
+					<div>
+						<label for = "repetirPassword" class = "etiqueta">Repetir Password</label>
+						<input type ="password" class ="input" name ="repetirPassword" title ="Ingrese su contraseña" placeholder ="Repetir Contraseña"/>
+					</div>
+					<div>
+						<label for = "correo" class = "etiqueta">Correo</label>
+						<input type ="email" class ="input" name ="correo" title ="Ingrese su correo electronico" placeholder ="Correo electronico"/>
+					</div>
+					<div>
+						<input type ="submit" class ="input" name ="boton" />
+						<i class="fa fa-refresh fa-spin"></i>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div>
+			<span></span>
+		</div>
+	</body>
+</html>

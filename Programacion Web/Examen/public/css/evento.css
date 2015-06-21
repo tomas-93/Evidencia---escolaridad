@@ -1,0 +1,143 @@
+body
+{
+	background-color: #F5F5F5;
+}
+h3
+{
+	margin: 0px;
+}
+h4
+{
+	float: left;
+	margin: 15px 10px 10px 10px;
+}
+#componentePanel
+{
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #51CCFF;
+	margin: 25px 0px 10px 0px;
+	height: 450px;
+	-webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+
+}
+#controlador
+{
+    padding: 25px;
+}
+#divPagina
+{
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	margin: 20px 25% 10px 25%;
+ 	padding: 2% 5% 10px 5%;
+ 	-webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.61);
+}
+#lista_de_asistencia
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #51CCFF;
+    height: 330px;
+    margin: 10px;
+    overflow: auto;
+    width: auto;
+}
+#tituloPanel
+{
+	border-radius: 10px;
+}
+#menu
+{
+	background-color: #FFFFFF;
+	border-color: #51CCFF;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.61);
+    height: 55px;
+
+}
+.botonMenu {
+    margin: 8px 0px 0px 0px;
+}
+
+.cabeza
+{
+    font-size: 15px;
+}
+
+.encabezadoGrupo
+{
+    border-bottom-style: solid;
+    border-bottom-color: #8D00DE;
+    border-bottom-width: 3px;
+
+}
+
+.encabezadoCarrera
+{
+    border-bottom-style: solid;
+    border-bottom-color: #8D00DE;
+    border-bottom-width: 3px;
+}
+
+
+.encabezado
+{
+    border-bottom-style: solid;
+    border-bottom-color: #8D00DE;
+    border-bottom-width: 3px;
+}
+.h3etiqeta
+{
+    height: 30px;
+    margin: 10px;
+    width: 448px;
+}
+.labelVentana
+{
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+}
+.labelVentana2
+{
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 3px;
+    margin: 10px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border-bottom-width: 3px;
+    border-bottom-color: #8D00DE;
+    border-bottom-style: solid;
+}
+.panel
+{
+    margin: 0px;
+}
+.ventana
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #51CCFF;
+    margin: 13px;
+}
+.xxxx
+{
+    margin: 10px;
+}
