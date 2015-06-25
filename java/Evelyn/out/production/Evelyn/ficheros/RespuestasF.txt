@@ -1,0 +1,77 @@
+Preocupada?
+Inquieta?
+Nerviosa?
+Mal?
+Desesperada?
+Triste?
+Cansada?
+Por que estas estresada?
+Por que estas inquieta?
+Por que estas nerviosa?
+Por que estas mal?
+Por que estas desesperada?
+Por que estas triste?
+Por que estas cansada?
+Por que estas preocupada?
+Por que estas tranquila?
+A que se debe que estes estresada?
+A que se debe que estes inquieta?
+A que se debe que estes nerviosa?
+A que se debe que estes mal?
+A que se debe que este bien?
+A que se debe que estes desesperada?
+A que se debe que estes triste?
+A que se debe que estes cansada?
+A que se debe que estes preocupada?
+No deberias estar estresada A que se debe?
+No deberias estar inquieta A que se debe?
+No deberias estar nerviosa A que se debe?
+No deberias estar mal A que se debe?
+No deberias estar desesperada A que se debe?
+No deberias estar triste A que se debe?
+No deberias estar cansada A que se debe?
+No deberias estar preocupada A que se debe?
+Por que te encuentras estresada?
+Por que te encuentras inquieta?
+Por que te encuentras nerviosa?
+Por que te encuentras mal?
+Por que te encuentras desesperada?
+Por que te encuentras triste?
+Por que te encuentras cansada?
+Por que te encuentras preocupada?
+Por que te encuentras tranquila?
+Bye, que tengas un buen dia!
+Adios, que tengas un buen dia!
+Aque se debe que este bien?
+ue bueno que te encuentras bien, ¿Cuentame por que?
+Ocurrio algo con tu tarea?
+Que paso con tu tarea?
+Ya hiciste tu tarea?
+Tienes alguna otra tarea?
+Estudiaste para el examen?
+A que hora tienes tu examen?
+Cuando es tu examen?
+Ya presentaste tu examen?
+De que materia es tu examen?
+Estudiaste para tu exposicion?
+A que hora es tu exposicion?
+Ya presentaste tu exposicion?
+De que materia es tu exposicion?
+Preparaste tu exposicion?
+Que paso con tu reporte?
+Ocurrio algo con tu reporte?
+Ya entregaste tu reporte?
+Imprimiste tu reporte?
+De que materia es tu reporte?
+Por que cres que vas a reprobar?
+Estas seguro que vas a reprobar?
+A que se debe que vas a reprobar?
+Que materia vas a reprobar?
+De que materia te van a evaluar?
+Como es que te van a evaluar?
+Cada cuanto tiempo te van a evaluar?
+Solo puedo realizar es una pequeña conversacion
+Me construyeron el 01 de marzo del 2015
+Pienso que la preparacion academica del itesco es muy buena
+Mi creador fue, Tomas Yussef con la colavoracion de Yajhaira Janett, Zenon Abel y Luis Alberto, son un equipo de octavo A
+Mi trabajo es analizar la frase que tu me das, buscando palabras claves y con ella devolviendote una respuestas

@@ -1,0 +1,6 @@
+Cuentame, Te ha ido bien o mal con tus tareas?
+Cuentame, Te ha ido bien o mal con tus examenes?
+cuentame, Te ha ido bien en tus materias?¿Has reprobado?
+cuentame, Y te evaluaron en alguna materia? 
+Cuentame, Has  hecho algun reporte?
+Cuentame, Ya te evaluaron?
