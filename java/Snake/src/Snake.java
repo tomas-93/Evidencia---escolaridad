@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Snake
 {
     private ArrayList<Point> cuerpo;
-    private Graphics2D snake;
+    private Graphics snake;
     private int direccionX;
     private int direccionY;
 
@@ -26,7 +26,7 @@ public class Snake
         this.cuerpo.add(new Point(n-10,y));
     }
     
-    public void setGraphicsSnake(Graphics2D g)
+    public void setGraphicsSnake(Graphics g)
     {
         this.snake = g;
     }
@@ -39,8 +39,7 @@ public class Snake
         for(int i = 0; i < this.cuerpo.size(); i++)
         {
             Point p = this.cuerpo.get(i);
-            if(i == 0) this.snake.setColor(Color.GREEN);
-            else this.snake.setColor(Color.WHITE);
+            this.snake.setColor(Color.WHITE);
             this.snake.fillRect(p.x,p.y,10,10);
         }
     }
@@ -56,7 +55,9 @@ public class Snake
     }
     public void crecerSnake()
     {
-        this.cuerpo.add(new Point(10,10));
+        int yAux = this.cuerpo.get(this.cuerpo.size()-1).y;
+        int xAux = this.cuerpo.get(this.cuerpo.size()-1).x;
+        this.cuerpo.add(new Point(xAux,yAux));
     }
     public void dirigirSnake( int n1, int n2)
     {

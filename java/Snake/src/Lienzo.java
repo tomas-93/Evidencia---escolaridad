@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 
 /**
  * Created by thomas on 12/04/2015.
@@ -16,39 +16,42 @@ public class Lienzo extends Canvas implements KeyListener, Runnable
     private Comida comida;
     private boolean controlJuego;
     private Thread proceso;
+    private BufferedImage imagenBuffer;
+    private Graphics g_imagenBuffer;
     public Lienzo()
     {
-        this.setBackground(Color.BLACK);
+        this.setBackground(Color.WHITE);
         this.setPreferredSize(new Dimension(500, 500));
         this.addKeyListener(this);
         System.out.println(this.getPreferredSize().getWidth()+" "+ this.getPreferredSize().getHeight());
-        this.snake = new IA(500,500);
-        this.gam1 = new Snake();
-        this.snake.cambiar(10, 10);
-        this.gam1.cambiar(30,30);
-        
-        this.comida = new Comida();
-        this.snake.buscarComida(this.comida.getPoint());
-        this.controlJuego = true;
         this.proceso = new Thread(this,"Snake");
 
     }
     @Override
     public void paint(Graphics g)
     {
-        Graphics2D g2 = (Graphics2D)g;
-        this.snake.setGraphicsSnake(g2);
+        this.update(g);
+    }
+    @Override
+    public void update(Graphics g)
+    {
+        this.imagenBuffer = new BufferedImage((int)this.getPreferredSize().getWidth(),(int) this.getPreferredSize().getHeight(), BufferedImage.TYPE_INT_RGB);
+        this.g_imagenBuffer = this.imagenBuffer.getGraphics();
+        this.snake.setGraphicsSnake(this.g_imagenBuffer);
         this.snake.pintarSnake();
-            
-        this.gam1.setGraphicsSnake(g2);
+
+        this.gam1.setGraphicsSnake(this.g_imagenBuffer);
         this.gam1.pintarSnake();
-        this.comida.setGraphicsComida(g2);
+        this.comida.setGraphicsComida(this.g_imagenBuffer);
         this.comida.pintarComida();
+        g.drawImage(this.imagenBuffer,0,0,this);
     }
     public void inicio()
     {
+        this.inicioComponentes();
         this.proceso.start();
     }
+
     @Override
     public void run()
     {
@@ -59,10 +62,10 @@ public class Lienzo extends Canvas implements KeyListener, Runnable
                 this.snake.moverSnake();
                 this.gam1.moverSnake();
                 this.muerte();
-                this.colicionBorde();
-                this.colicionComida();
+                this.colisionBorde();
+                this.colisionComida();
                 this.repaint();
-                this.proceso.sleep(50);
+                this.proceso.sleep(40);
             }
         }catch (Exception e)
         {
@@ -70,7 +73,18 @@ public class Lienzo extends Canvas implements KeyListener, Runnable
             e.printStackTrace();
         }
     }
-    private void colicionBorde()
+    private void inicioComponentes()
+    {
+        this.snake = new IA(500,500);
+        this.gam1 = new Snake();
+        this.snake.cambiar(10, 10);
+        this.gam1.cambiar(30,30);
+
+        this.comida = new Comida(this.snake, this.gam1);
+        this.snake.buscarComida(this.comida.getPoint());
+        this.controlJuego = true;
+    }
+    private void colisionBorde()
     {
         if(this.snake.getCuerpo().get(0).x <= -10)
         {
@@ -99,35 +113,22 @@ public class Lienzo extends Canvas implements KeyListener, Runnable
             this.gam1.getCuerpo().get(0).setLocation(this.gam1.getCuerpo().get(0).x, 0);
         }
     }
-    private void colicionComida()
+    private void colisionComida()
     {
         if(this.snake.getCuerpo().get(0).equals(this.comida.getPoint()))
         {
             this.snake.crecerSnake();
-            this.comida.nuevaComida();
+            this.comida.nuevaComida(this.snake, this.gam1);
             this.snake.buscarComida(this.comida.getPoint());
         }
         if(this.gam1.getCuerpo().get(0).equals(this.comida.getPoint()))
         {
             this.gam1.crecerSnake();
-            this.comida.nuevaComida();
+            this.comida.nuevaComida(this.snake, this.gam1);
             this.snake.buscarComida(this.comida.getPoint());
             
         }
-        if(this.snake.getCuerpo().get(0).equals(this.gam1.getCuerpo().get(this.gam1.getCuerpo().size()-1)))
-        {
-            this.snake.crecerSnake();
-            this.gam1.getCuerpo().remove(this.gam1.getCuerpo().size()-1);
-        }
-        if(this.gam1.getCuerpo().get(0).equals(this.snake.getCuerpo().get(this.snake.getCuerpo().size()-1)))
-        {
-            
-            this.gam1.crecerSnake();
-            this.snake.getCuerpo().remove(this.snake.getCuerpo().size()-1);
-        }
-        
-        
-    
+
     }
     private void muerte()
     {
@@ -135,7 +136,7 @@ public class Lienzo extends Canvas implements KeyListener, Runnable
         {
             if(this.gam1.getCuerpo().get(0).equals(this.snake.getCuerpo().get(n)))
             {
-                System.exit(0);
+                this.inicioComponentes();
             }
         }
     }
